@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+//declaracion de variable globales
+int n1, n2;
+//
+bool esPar(int numero)
+{
+	return numero% 2 == 0;
+}
+//funcion
+int sumar()
+{
+	return n1+n2;
+}
+int multiplicar()
+{
+	return n1*n2;
+}
+void ingresar()
+{
+	cout<<"ingresar el primer numero:";
+	cin>>n1;
+	cout<<"ingresar el segundo numero:";
+	cin>>n2;
+}
+
+int main() 
+{
+	ingresar();
+	cout<<"Sumar de los numeros es:"<<sumar()<<endl;
+	cout<<"multiplicacion de los numeros es:"<<multiplicar()<<endl;
+	if(esPar(n1))
+	cout<<"numero "<<n1<<" es Par"<<endl;
+	else
+		cout<<"numero "<<n1<<" es Impar"<<endl;
+	return 0;
